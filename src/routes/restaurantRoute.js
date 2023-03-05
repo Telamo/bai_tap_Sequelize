@@ -18,7 +18,7 @@ restaurantRoute.get('/getLikeRes', getLikeRes)
 //thêm đánh giá nhà hàng
 restaurantRoute.post('/rateRes', rateRes)
 
-// láy danh sách đánh giá theo nhà hàng và user
+// lấy danh sách đánh giá theo nhà hàng và user
 restaurantRoute.get('/getRateUserRes', getRateUserRes)
 
 module.exports = restaurantRoute

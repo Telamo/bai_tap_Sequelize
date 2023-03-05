@@ -8,15 +8,6 @@ const model = initModels(sequelize)
 
 const Op = Sequelize.Op
 
-
-
-const getUser = async (req, res) => {
-    let { id } = req.params
-
-    let data = await model.user.findAll()
-    res.send(data)
-}
-
 const createOrder = async (req, res) => {
     let { user_id, food_id, amount, arr_sub_id} = req.body
 
@@ -32,6 +23,5 @@ const createOrder = async (req, res) => {
 
 
 module.exports = {
-    getUser,
     createOrder
 }

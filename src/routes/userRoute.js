@@ -3,11 +3,9 @@
 const express = require('express')
 const userRoute = express.Router()
 
-const { getUser, createOrder} = require('../controllers/userController')
+const { createOrder} = require('../controllers/userController')
 
-userRoute.get('/getUser/:id', getUser)
-
-
+// thêm order
 userRoute.post('/createOrder', createOrder)
 
 module.exports = userRoute
